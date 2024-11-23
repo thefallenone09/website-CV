@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #50c878;
+    --accent-color: #ff6b6b;
+    --background-light: #ffffff;
+    --background-dark: #343a40;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    padding-top: 56px;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+.navbar {
+    background-color: #D2B48C !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-light);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--accent-color);
+}
+
+#home {
+    width: 100%; /* Lebar penuh */
+    height: 100vh; /* Tinggi penuh viewport (100% dari tinggi layar) */
+    background-image: url('https://i.pinimg.com/736x/fb/48/fc/fb48fc135b4982dde547ea1bd0b6124f.jpg');
+    background-size: cover; /* Background menyesuaikan untuk menutupi area */
+    background-position: center; /* Posisikan gambar di tengah */
+    background-repeat: no-repeat; /* Hindari pengulangan gambar */
+    color: var(--text-light);
+    padding: 0; /* Hilangkan padding */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Tengah secara vertikal dan horizontal */
+    text-align: center;
+}
+
+
+
+/* #wallpaper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+/* 
+#home h1 {
+    font-size: 800px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+#home p.lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem; */
+/* } */
+
+#home .heading-text {
+    font-weight: 900; /* Membuat teks lebih tebal */
+    font-size: 3rem; /* Ukuran besar untuk heading */
+    font-family: 'Roboto', sans-serif; /* Gunakan font Roboto */
+    text-align: left; /* Rata kiri */
+    line-height: 1.4; /* Memberikan spasi antar baris */
+    color: var(--text-light); /* Gunakan warna terang (opsional) */
+}
+
+#about {
+    background: linear-gradient(135deg, #fff6e9 0%, #fff9f0 100%);
+    padding: 80px 0;
+}
+/* #h2 {
+    font-size: calc(1.325rem + .9vw);
+    font-weight: bolder;
+} */
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 15px;  /* Reduced from 30px */
+}
+
+.profile-image {
+    border: 8px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* .text-container {
+    padding: 10px;  /* Reduced from 20px */
+    /* background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+} */ */
+
+.text-container p {
+    font-weight: 700;  /* Added bold font weight */
+    font-size: large;
+}
+
+.text-container .lead {
+    font-weight: 700;  /* Added bold font weight */
+    font-size: 15px;
+}
+
+.floating-box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 40px;
+}
+
+.floating-box .icon {
+    background-color: #D2B48C;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.floating-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.floating-box p {
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.floating-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.floating-box ul li {
+    margin-bottom: 5px;
+}
+
+.floating-box .subtitle {
+    color: #8a2be2;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.floating-card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.floating-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.floating-card .card-icon {
+    background-color: #D2B48C;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    color: var(--text-light);
+}
+
+.floating-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.floating-card p {
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.floating-card .btn-outline-primary {
+    color: #D2B48C;
+    border-color: #D2B48C;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.floating-card .btn-outline-primary:hover {
+    background-color: #D2B48C;
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    .floating-card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.btn-primary {
+    background-color: #816745;
+    border-color: #816745;
+}
+
+.btn-primary:hover {
+    background-color: #816745;
+    border-color: #816745;
+}
+
+#about {
+    background-color: #D2B48C;
+    padding: 80px 0;
+}
+
+#projects {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    padding: 80px 0;
+    font-weight: bold;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-card {
+    background-color: var(--background-light);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-card .card-body {
+    padding: 1.5rem;
+}
+
+.project-card .card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.project-card .card-text {
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+#contact {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    padding: 80px 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-width: 2px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #D2B48C !important;
+    color: var(--text-light);
+    padding: 20px 0;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    #home p.lead {
+        font-size: 1.2rem;
+    }
+    #projects h2,
+    #contact h2 {
+        font-size: 2rem;
+    }
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.skill-progress {
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    transition: width 1s ease-in-out;
+}
+
+/* Add these new styles for the modal */
+.project-modal .swal2-popup {
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.project-modal .swal2-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-modal .project-details {
+    text-align: left;
+}
+
+.project-modal h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.project-modal .description p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.project-modal .technologies {
+    background-color: rgba(74, 144, 226, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.project-modal .project-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.project-modal .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+}
+
+.project-modal .btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+}
+
+.swal2-close:focus {
+    box-shadow: none;
+}
+
+/* Ubah warna ikon kontak */
+.btn-outline-dark .bi,
+.btn-outline-danger .bi,
+.btn-outline-warning .bi,
+.btn-outline-success .bi {
+    color: #D2B48C; /* Warna logo sesuai permintaan */
+    transition: color 0.3s ease;
+}
+
+/* Hover efek untuk tombol */
+.btn-outline-dark:hover .bi,
+.btn-outline-danger:hover .bi,
+.btn-outline-warning:hover .bi,
+.btn-outline-success:hover .bi {
+    color: #ffffff; /* Warna ikon berubah menjadi putih saat hover */
+}
+
+/* Ubah warna kotak tombol */
+.btn-outline-dark,
+.btn-outline-danger,
+.btn-outline-warning,
+.btn-outline-success {
+    background-color: #D2B48C; /* Warna kotak */
+    border-color: #D2B48C; /* Warna border */
+    color: white; /* Warna teks atau ikon di dalam */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efek hover untuk tombol */
+.btn-outline-dark:hover,
+.btn-outline-danger:hover,
+.btn-outline-warning:hover,
+.btn-outline-success:hover {
+    background-color: white; /* Warna kotak berubah menjadi putih */
+    color: #D2B48C; /* Teks/ikon menjadi warna utama */
+    border-color: #D2B48C; /* Border tetap konsisten */
+}
+
+/* Ubah warna ikon di dalam tombol */
+.btn-outline-dark .bi,
+.btn-outline-danger .bi,
+.btn-outline-warning .bi,
+.btn-outline-success .bi {
+    color: white; /* Warna ikon default */
+    transition: color 0.3s ease;
+}
+
+/* Hover efek untuk ikon */
+.btn-outline-dark:hover .bi,
+.btn-outline-danger:hover .bi,
+.btn-outline-warning:hover .bi,
+.btn-outline-success:hover .bi {
+    color: #D2B48C; /* Ikon mengikuti warna utama */
+}
